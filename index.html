@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/video.css">
+	<script type="text/javascript" src="js/video.js"></script>
+</head>
+<body>
+<div class="video-wrapper">
+	<!-- <div class="video"> -->
+		<div class="video-play">
+			<video src="example.mp4" autoplay></video>
+		</div>
+		<!--视频控制模块(除进度条)START-->
+		<div class="video-control">
+			<!-- 开始暂停按钮START-->
+			<div class="video-control-btn">
+				<span class="to-pause"></span>
+			</div>
+			<!--开始暂停按钮END-->
+			<!--播放时间/总时间START-->
+			<div class="video-control-time">
+				<span class="recent-time">0:00:00</span>/<span class="all-time">0:00:00</span>
+			</div>
+			<!--播放时间/总时间END-->
+			<!--全屏按钮START-->
+			<div class="video-control-fullscreen">
+				<span class="video-control-fullscreen-btn to-fullscreen"></span>
+			</div>
+			<!--全屏按钮END-->
+			<!--音量调节模块START-->	
+			<div class="video-control-volume">
+				<div class="volume-icon"></div><!--音量调节按钮-->
+				<div class="volume-control-box"><!--音量调节弹出框-->
+					<div class="volume-control-bar"><!--音量调节弹出框音量条-->
+						<div class="volume-control-current"></div><!--音量调节弹出框音量条当前音量-->
+					</div>
+					<div class="volume-current"></div><!--音量调节拖动按钮-->
+				</div>
+			</div>
+			<!--音量调节模块END-->	
+		</div>
+		<!--视频控制模块(除进度条)END-->
+		<!--进度条START-->
+		<div class="video-control-progress">
+			<div class="video-loaded"></div><!--缓存进度条（没有用到）-->
+			<div class="video-played">
+				<span class="video-played-circle"></span>
+			</div>
+		</div>
+		<!--进度条END-->
+	<!-- </div>	 -->
+</div>
+
+</body>
+</html>
