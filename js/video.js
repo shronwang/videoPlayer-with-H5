@@ -78,7 +78,7 @@ var fullScreenHandler=function(){
 		fixFullscreenMethod(document,"CancelFullScreen");	
 		style=style.replace("off-fullscreen","to-fullscreen");	
 	}else{
-		fixFullscreenMethod(videoWrapper,"RequestFullScreen");
+		fixFullscreenMethod(videoBox,"RequestFullScreen");
 		style=style.replace("to-fullscreen","off-fullscreen");
 	}
 	fullScreenBtn.className=style;
